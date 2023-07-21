@@ -1,0 +1,10 @@
+flask
+flask_restful
+flask_cors
+
+pydantic
+datamodel-code-generator
+
+python-dotenv
+langchain
+openai
