@@ -41,9 +41,7 @@ todos = ['todo1', 'todo2', 'todo3']
 class Todos(Resource):
     def get(self):
         return GetTodoResponse(todos=todos).dict()
-
-
-class AddTodo(Resource):
+    
     def post(self):
         req = request.get_json()
         data = PostTodoRequest(**req)
@@ -52,11 +50,8 @@ class AddTodo(Resource):
         return PostTodoResponse(todos=todos).dict()
 
 
-
 # エンドポイントの追加
 api.add_resource(Todos, '/todos')
-api.add_resource(AddTodo, '/add-todo')
-
 
 # サーバー起動
 if __name__ == '__main__':
