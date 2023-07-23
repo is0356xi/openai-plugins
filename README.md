@@ -18,4 +18,5 @@ python app.py
 
 - 実行テスト
     - ```plugin_call_test_langchain.ipynb```に従って実行
+    - ```function_calling_test.ipynb```に従って実行
 
